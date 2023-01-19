@@ -17,5 +17,3 @@ const tribonacci = n => {
   }
   return result;
 }
-
-console.log(tribonacci(144));
