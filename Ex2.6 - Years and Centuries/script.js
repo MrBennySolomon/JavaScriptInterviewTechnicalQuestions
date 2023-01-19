@@ -1,0 +1,1 @@
+const centuryFromYear = year => year % 10 > 0 ? Math.round(year / 100) + 1 : year / 100;
