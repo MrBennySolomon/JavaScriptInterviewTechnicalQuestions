@@ -1,12 +1,19 @@
-//NOT FINISHED YET
+
 const numberOfDuplicates = str => {
   const countObj = str.split('').reduce((accum, curr) => {
-    if (accum.hasOwnProperty(curr)) {
-      accum[curr] = accum[curr] + 1;
+    if (accum.hasOwnProperty(curr.toLowerCase())) {
+      accum[curr.toLowerCase()] = accum[curr.toLowerCase()] + 1;
     }else {
-      accum[curr] = 1;
+      accum[curr.toLowerCase()] = 1;
     }
     return accum;
   }, {});
-  return countObj;
+  
+  let counter = 0;
+  for (const val of Object.values(countObj)) {
+    if (val > 1) {
+      counter++;
+    }
+  }
+  return counter;
 }
