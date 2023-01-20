@@ -18,7 +18,3 @@ const toCamelCase = str => {
 
   return newWord.join('');
 }
-
-
-console.log(toCamelCase("the-stealth-warrior"));
-console.log(toCamelCase('The_Stealth_Warrior'));
