@@ -6,9 +6,5 @@ const longest = (s1, s2) => {
   for (const char of s2.split('')) {
     set.add(char);
   }
-
   return Array.from(set).sort((a, b) => a.localeCompare(b)).join('');
-
 }
-
-console.log(longest('abcdefghijklmnopqrstuvwxyz', 'abcdefghijklmnopqrstuvwxyz'));
