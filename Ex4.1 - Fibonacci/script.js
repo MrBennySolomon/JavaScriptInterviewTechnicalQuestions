@@ -15,3 +15,5 @@ const fibonacci = n => {
   }
   return result;
 }
+
+console.log(fibonacci(144));
