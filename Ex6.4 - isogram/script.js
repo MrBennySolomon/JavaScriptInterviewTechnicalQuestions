@@ -1,4 +1,5 @@
 const isIsogram = str => {
+  if (str.length === 0 || str.length === 1) return true;
   const countObj = str.toLowerCase().split('').reduce((accum, curr) => {
     if (accum.hasOwnProperty(curr)) {
       accum[curr] = accum[curr] + 1;
