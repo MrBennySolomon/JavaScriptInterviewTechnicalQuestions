@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 const data = 
 [
 {
@@ -54,11 +42,10 @@ const checkPositive = (onTheBus, busStop) => {
 const busRoute = data => {
 
   let onTheBus = 0;
+
   for (const busStop of data) {
-      
     onTheBus += busStop['inAndOut'][0];
-    onTheBus -= checkPositive(onTheBus, busStop['inAndOut'][1]);
-      
+    onTheBus -= checkPositive(onTheBus, busStop['inAndOut'][1]); 
   }
   
   return onTheBus;
