@@ -1,0 +1,1 @@
+const findPerimeter = (length, width) => length * 2 + width * 2;
